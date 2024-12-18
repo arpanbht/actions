@@ -28,6 +28,10 @@ app.get("/api/user", async (req, res) => {
   });
 });
 
+app.get("/hello", (_, res) => {
+  res.send("say hello");
+});
+
 app.listen(PORT ?? 8000, () => {
   console.log(`Server running on port ${PORT}`);
 });
